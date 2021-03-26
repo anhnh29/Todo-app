@@ -1,0 +1,19 @@
+.task {
+  max-width: 920px;
+  margin: 0px auto;
+  margin-top: 30px;
+  display: flex;
+}
+.task_text {
+  width: 700px;
+  background: #da8f8f;
+  min-height: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.task_option {
+  width: 129px;
+  margin-left: 30px;
+}

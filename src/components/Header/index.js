@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './index.css';
 
-const index = () => {
+const Header = () => {
 	return (
-		<div>
-			Header
+		<div className='header'>
+			Todo List
 		</div>
 	)
 }
 
-export default index
+export default Header

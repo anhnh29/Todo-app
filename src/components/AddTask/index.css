@@ -1,0 +1,28 @@
+.form {
+  max-width: 920px;
+  height: auto;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+.input {
+  width: 729px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  outline: none;
+  padding-left: 20px;
+  font-size: 24px;
+}
+.button {
+  width: 129px;
+  height: 63px;
+  background: #23a23f;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  margin-left: 30px;
+  cursor: pointer;
+  font-size: 22px;
+}
