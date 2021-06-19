@@ -6,13 +6,12 @@ import { REMOVE_TASK, DONE_TASK } from "../../actions/actionType";
 const ListTodo = () => {
   const todoList = useSelector((state) => state);
   const dispatch = useDispatch();
-  console.log("List in store", todoList);
 
   const removeTask = (id) => {
     dispatch({ type: REMOVE_TASK, payload: id });
   };
-  const doneTask = (id) => {
-    dispatch({ type: DONE_TASK, payload: id });
+  const doneTask = (item) => {
+    dispatch({ type: DONE_TASK, payload: item });
   };
 
   return (
@@ -30,13 +29,15 @@ const ListTodo = () => {
                     onClick={() => {
                       removeTask(item.id);
                     }}
+                    className="btn_rm"
                   >
                     Remove
                   </button>
                   <button
                     onClick={() => {
-                      doneTask(item.id);
+                      doneTask(item);
                     }}
+                    className="btn_done"
                   >
                     Done
                   </button>

@@ -12,12 +12,13 @@ const rootReducer = (state = initialState, action) => {
       });
       return (state = newList);
     case DONE_TASK:
-      const indexUpdate = state.findIndex((item) => {
-        return item.id === action.payload;
+      const newArrUpdate = state.filter((item) => {
+        return item.id !== action.payload.id;
       });
-      const newArrUpdate = state;
-      newArrUpdate[indexUpdate].status = 2;
-      return (state = newArrUpdate);
+      return (state = [
+        ...newArrUpdate,
+        { id: action.payload.id, status: 2, content: action.payload.content },
+      ]);
     default:
       return state;
   }

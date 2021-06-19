@@ -21,8 +21,6 @@ const AddTask = () => {
     }
   };
 
-  // id: console.log((Math.random() * 1000).toFixed());
-
   const handleChangeInput = (e) => {
     setTask(e.target.value);
   };
