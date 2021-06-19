@@ -1,0 +1,26 @@
+.header_task_done {
+  max-width: 70px;
+  height: 50px;
+  padding-top: 20px;
+  margin-top: 30px;
+  background-color: tomato;
+}
+.task_done {
+  max-width: 920px;
+  margin: 0px auto;
+  margin-top: 30px;
+  display: flex;
+}
+.task_text_done {
+  width: 700px;
+  background: #23a23f;
+  min-height: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 25px;
+  border-radius: 10px;
+}
+.task_option_done {
+  width: 129px;
+  margin-left: 30px;
+}

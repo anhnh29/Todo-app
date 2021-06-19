@@ -16,4 +16,27 @@
 .task_option {
   width: 129px;
   margin-left: 30px;
+  display: flex;
+}
+.btn_rm {
+  width: 60px;
+  height: 44px;
+  background-color: #cc3300;
+  box-shadow: none;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.btn_rm:active {
+  border: none;
+}
+.btn_done {
+  width: 60px;
+  height: 44px;
+  background-color: #339900;
+  box-shadow: none;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  margin-left: 10px;
 }
